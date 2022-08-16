@@ -117,3 +117,34 @@ main{
 #tasks .task .content .text:not(:read-only){
     color: var(--pink);
 }
+
+#tasks .task .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.task .actions button:hover{
+    opacity: 0.8;
+}
+
+.task .actions button:active{
+    opacity: 0.6;
+}
+
+.task .actions .edit{
+    color: var(--pink);
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+}
+
+.task .actions .delete {
+    color: crimson;
+}
