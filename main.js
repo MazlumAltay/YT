@@ -1,3 +1,7 @@
+
+
+
+
 window.addEventListener('load', () =>{
     const form = document.querySelector("#new-task-form");
     const input = document.querySelector("#new-task-input");
@@ -59,5 +63,10 @@ window.addEventListener('load', () =>{
                 task_edit_el.innerText = "Edit";
             }
         });
-    })
-})
+
+        task_delete_el.addEventListener('click', ()=>{
+            list_el.removeChild(task_el);
+        });
+
+    });
+});
